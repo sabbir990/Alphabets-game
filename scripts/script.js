@@ -8,11 +8,8 @@ homeStartBtn.addEventListener('click', function () {
     playgroundSection.classList.remove('hidden');
     const displayAlpha = document.getElementById('alphabet');
     displayAlpha.innerText = getRandomAlphabet();
-
-    const keyId = getRandomAlphabet();
-
-    const key = document.getElementById(keyId);
-    key.classList.add('bg-red-600', 'text-white')
+    const key = document.getElementById(displayAlpha.innerHTML.toLowerCase());
+    key.classList.add('bg-red-600', "text-white")
 })
 
 function getRandomAlphabet() {
