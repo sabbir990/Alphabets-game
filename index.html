@@ -28,7 +28,7 @@
                         Don't watch keyboard while playing
                     </div>
                     <section class="text-center">
-                        <h1 class="text-8xl mt-[60px] uppercase" id="alphabet">Y</h1>
+                        <h1 class="text-8xl mt-[60px] uppercase" id="alphabet"></h1>
                     </section>
                 </div>
             </div>
@@ -68,14 +68,14 @@
                 </div>
             </div>
             <div class="flex items-center justify-center space-x-96">
-                <button class="bg-[#894189] py-3 px-6 text-white border border-transparent rounded-3xl">Like <i class="fa-solid fa-heart-circle-plus"></i> <span>1</span></button>
-                <button class="bg-[#360490] py-3 px-6 text-white border border-transparent rounded-3xl">score <i class="fa-solid fa-circle-dollar-to-slot"></i> <span>1</span></button>
+                <button class="bg-[#894189] py-3 px-6 text-white border border-transparent rounded-3xl">Life <i class="fa-solid fa-heart-circle-plus"></i> <span id="life-number">5</span></button>
+                <button class="bg-[#360490] py-3 px-6 text-white border border-transparent rounded-3xl">score <i class="fa-solid fa-circle-dollar-to-slot"></i> <span id="score-number">0</span></button>
             </div>
         </section>
-        <section class="score min-h-screen flex items-center hidden">
+        <section class="score min-h-screen flex items-center hidden" id="game-over">
             <div class="flex items-center justify-center flex-col space-y-4 bg-slate-900 text-white w-2/6 mx-auto p-10 border border-transparent rounded-3xl">
-                <h1 class="text-5xl">Score : 14<span></span></h1>
-                <button class="py-2 px-3 border border-transparent rounded-2xl bg-white text-slate-900 font-bold">Play Now</button>
+                <h1 class="text-5xl">Score : <span id="final-score">0</span></h1>
+                <button class="py-2 px-3 border border-transparent rounded-2xl bg-white text-slate-900 font-bold" id="play-again-btn">Play Again</button>
                 <p>Practice will make you pro</p>
             </div>
         </section>
